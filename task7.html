@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <select id="drinks">
+        <option selected disabled>What is Fovarite Drink</option>
+        <option>banana</option>
+        <option>milk</option>
+        <option>tea</option>
+        <option>cofee</option>
+        <option>cocktail</option>
+
+
+
+
+    </select>
+</body>
+
+</html>
+<script>
+    drink = document.getElementById('drinks');
+    drink.addEventListener('change', function () {
+        console.clear();
+        let arr = { banana: "15 $", milk: "20 $", tea: "504 $", cofee: "100 $", cocktail: "100 $" };
+        selectdrink = drink.value;
+        if (arr[selectdrink]) {
+            console.log("The price of" + selectdrink + " is " + arr[selectdrink]);
+            alert("The price of" + selectdrink + " is " + arr[selectdrink]);
+
+        }
+
+    });
+
+</script>
